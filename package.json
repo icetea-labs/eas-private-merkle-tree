@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "main": "dist/index.js",
   "type": "module",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "lint": "npx @biomejs/biome lint --apply .",
     "build": "rm -rf dist && esbuild ./src/index.ts --bundle --platform=node --packages=external --outdir=dist --allow-overwrite --format=esm",
